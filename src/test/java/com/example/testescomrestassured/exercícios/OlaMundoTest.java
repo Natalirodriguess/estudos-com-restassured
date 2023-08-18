@@ -1,7 +1,7 @@
 package com.example.testescomrestassured.exercícios;
 
 import static io.restassured.RestAssured.*;
-import io.restassured.RestAssured;
+
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -9,16 +9,14 @@ import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
-public class OlaMundoTeste {
+public class OlaMundoTest {
 
     @Test
     public void testeOlaMundo(){
