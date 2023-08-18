@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
 public class OlaMundoTeste {
@@ -58,5 +58,14 @@ public class OlaMundoTeste {
         List<Integer> impares = Arrays.asList(1,3,5,7,9);
         Assert.assertThat(impares, hasSize(5));
         assertThat(impares, hasSize(5));
+        assertThat(impares, contains(1,3,5,7,9));
+        assertThat(impares, containsInAnyOrder(3,1,9,5,7));
+        assertThat(impares, hasItem(7));
+        assertThat(impares, hasItems(7,9));
+
+        assertThat("Maria", is(not("João")));
+        assertThat("Maria", anyOf(is("Maria"), is("Joaquina")));
+        assertThat("Joaquina", allOf(startsWith("Joa"), endsWith("ina"), containsString("qui")));
+
     }
 }
