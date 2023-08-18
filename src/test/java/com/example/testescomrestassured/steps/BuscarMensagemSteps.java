@@ -24,6 +24,6 @@ public class BuscarMensagemSteps {
     }
     @E("a mensagem deve ser {string}")
     public void a_mensagem_deve_ser(String string) {
-        assertEquals(response.getBody().asString(), "Ola Mundo!");
+        assertEquals("Ola Mundo!", response.getBody().asString());
     }
 }
