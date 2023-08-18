@@ -1,2 +1,2 @@
 # Estudos com restsassured
-Esse repositório servirá para Hands-on do curso de Rest Assured que estou realizando para aprofundamento de conhecimentos nessa biblioteca
+Esse repositório contém os exercícios propostos no curso de Rest Assured para aprofundamento de conhecimentos nessa biblioteca. Além disso, contém testes com cucumber para aprofundar o conhecimento nos testes realizados com essa ferramemta.
